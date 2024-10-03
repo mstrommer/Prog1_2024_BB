@@ -7,7 +7,8 @@ public class Methods {
         printUntilNumber(number);
 
         System.out.println("=== Exercise 2 ===");
-        System.out.println(sumOfNumbers(3,1000));
+        int sum = sumOfNumbers(3,1000);
+        System.out.println(sum);
     }
 
     // Exercise 1 aus den Folien
