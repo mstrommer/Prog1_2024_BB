@@ -9,6 +9,7 @@ public class PetShop implements iPetShop{
 
     public static void main(String[] args) {
         Dog pluto = new Dog("Pluto");
+
         Cat garfield = new Cat("Garfield");
         Animal someAnimal = pluto;
         NoiseCapable nc = pluto;

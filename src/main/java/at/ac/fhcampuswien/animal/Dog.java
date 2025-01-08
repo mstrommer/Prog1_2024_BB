@@ -18,4 +18,9 @@ public class Dog extends Animal {
     public void makeNoise() {
         bark();
     }
+
+
+    public static void foo(){
+        System.out.println("Hello!");
+    }
 }

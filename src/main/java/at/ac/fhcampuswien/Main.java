@@ -1,9 +1,31 @@
 package at.ac.fhcampuswien;
 
+import java.util.List;
 import java.util.Scanner;
+import java.util.function.Predicate;
+
+import static at.ac.fhcampuswien.Generics.foo;
 
 public class Main {
     public static void main(String[] args) {
+        // Generics
+        List<String> list = foo("Hello World");
+        Predicate<String> p = new Predicate<>() {
+            @Override
+            public boolean test(String s) {
+                return s.equals("Hello World");
+            }
+        };
+
+        MyPredicate<String> mp = new MyPredicate<>();
+        boolean result = foo(mp, "Hello");
+        System.out.println("first approach: " + result);
+        System.out.println("second approach: " + foo(p, "Hello World"));
+        System.out.println("third approach: " + foo(s -> s.equals("Hello"), "Hello World"));
+
+        Generics<Number> g = new Generics<>();
+        g.printV(9);
+
         // What are our variables?
         double area = 0.;
         double perimeter = 0.;

@@ -18,4 +18,8 @@ public abstract class Animal implements NoiseCapable{
     public void eat(){
         System.out.println(name + " eats.");
     }
+
+    public static void foo(){
+        System.out.println("Hello!");
+    }
 }
